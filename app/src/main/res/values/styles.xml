@@ -1,0 +1,122 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="android:Theme.Holo.Light">
+        <!-- Customize your theme here. -->
+    </style>
+
+    <style name="FullscreenTheme" parent="android:Theme.NoTitleBar">
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowBackground">@null</item>
+        <item name="metaButtonBarStyle">@style/ButtonBar</item>
+        <item name="metaButtonBarButtonStyle">@style/ButtonBarButton</item>
+    </style>
+
+    <!-- Backward-compatible version of ?android:attr/buttonBarStyle -->
+    <style name="ButtonBar">
+        <item name="android:paddingLeft">2dp</item>
+        <item name="android:paddingTop">5dp</item>
+        <item name="android:paddingRight">2dp</item>
+        <item name="android:paddingBottom">0dp</item>
+        <item name="android:background">@android:drawable/bottom_bar</item>
+    </style>
+
+    <!-- Backward-compatible version of ?android:attr/buttonBarButtonStyle -->
+    <style name="ButtonBarButton" />
+
+    <!-- Style for dialog activities -->
+    <style name="DialogActivityButtonsLayoutStyle">
+        <item name="android:background">#005EAC</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">fill_parent</item>
+        <item name="android:orientation">horizontal</item>
+        <item name="android:gravity">center_vertical</item>
+    </style>
+
+    <!-- Style for dialog activities buttons-->
+    <style name="DialogActivityButtonsStyle">
+        <item name="android:background">#005EAC</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:textColor">#FFF</item>
+    </style>
+
+    <!-- TextView book name !-->
+    <style name="TextViewBookNameStyle">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">#005EAC</item>
+        <item name="android:typeface">monospace</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">@dimen/GridTextFontSize</item>
+    </style>
+
+    <!-- TextView author name !-->
+    <style name="TextViewAuthorNameStyle">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">#ff000000</item>
+        <item name="android:textSize">@dimen/GridTextFontSize</item>
+    </style>
+
+    <!-- TextView book is in use !-->
+    <style name="TextViewBookIsInUseStyle">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">@dimen/GridTextFontSize</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">#ff5d4ee1</item>
+    </style>
+
+    <style name="SpinnerStyle">
+        <item name="android:background">@android:drawable/btn_dropdown</item>
+    </style>
+
+    <style name="LabelCaptionInActivity">
+        <item name="android:textSize">@dimen/GridTextFontSize</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">#005EAC</item>
+        <item name="android:typeface">monospace</item>
+    </style>
+
+    <style name="ModiBookLabelCaptionBookIsInUseStyle">
+        <item name="android:textSize">@dimen/GridTextFontSize</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">#005EAC</item>
+        <item name="android:typeface">monospace</item>
+    </style>
+
+    <style name="ModiBookLabelCaptionBookIsFreeStyle">
+        <item name="android:textSize">@dimen/GridTextFontSize</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">#005EAC</item>
+        <item name="android:typeface">monospace</item>
+    </style>
+
+    <!-- TextView book state !-->
+    <style name="ModiBookTextViewBookStateStyle">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">#ff000000</item>
+        <item name="android:textSize">25sp</item>
+    </style>
+
+    <!-- Edit texts style !-->>
+    <!-- Simple EditText style !-->
+    <style name="SimpleEditTextStyle">
+        <item name="android:background">@android:drawable/edit_text</item>
+        <item name="android:maxLength">@integer/EditTextMaxTextLength</item>
+        <item name="android:singleLine">true</item>
+    </style>
+
+    <!-- Comments EditText style !-->
+    <style name="CommentsEditTextStyle">
+        <item name="android:background">@android:drawable/edit_text</item>
+        <item name="android:maxLength">@integer/EditTextCommentsMaxTextLength</item>
+        <item name="android:singleLine">false</item>
+        <item name="android:scrollbarFadeDuration">0</item>
+        <item name="android:scrollbarAlwaysDrawVerticalTrack">true</item>
+        <item name="android:inputType">textMultiLine</item>
+    </style>
+
+</resources>

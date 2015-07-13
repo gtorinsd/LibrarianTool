@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="wrap_content"
+    android:id="@+id/dd_id"
+    android:padding="0dp"
+    android:background="#005EAC"
+    android:orientation="horizontal">
+
+    <ImageView
+        android:src="@drawable/delphi_logo_blue_cropped"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:id="@+id/Logo"
+        android:adjustViewBounds="true"
+        android:padding="0dp"
+        android:layout_marginLeft="0dp"
+        android:layout_marginRight="0dp"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/Logo"
+            android:textSize="20sp"
+            android:id="@+id/delphi_details_id"
+            android:text= "@string/delphi_training_center"
+            android:background="#005EAC"
+            android:textColor="#D1D3D4"
+            android:paddingLeft="15dip"
+            android:textIsSelectable="true" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/delphi_details_id"
+            android:layout_toRightOf="@+id/Logo"
+            android:textSize="13sp"
+            android:id="@+id/delphi_manager_id"
+            android:text= "@string/delphi_manager"
+            android:background="#005EAC"
+            android:textColor="#D1D3D4"
+            android:paddingLeft="15dip"
+            android:paddingTop="1dip"
+            android:layout_gravity="bottom" />
+        </LinearLayout>
+</LinearLayout>

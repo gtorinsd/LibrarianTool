@@ -1,0 +1,7 @@
+<resources>
+    <color name="black_overlay">#66000000</color>
+    <color name="browseBooks_ColorBookIsInUse">#1c6c6c6c</color>
+
+    <color name="ModiBook_ColorBookIsInUse">#005EAC</color>
+    <color name="ModiBook_ColorBookIsFree">#000000</color>
+</resources>

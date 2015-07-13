@@ -1,0 +1,217 @@
+<resources>
+    <string name="app_name">LibrarianTool</string>
+    <string name="action_tools">Сервис</string>
+    <string name="title_activity_tools">ToolsActivity</string>
+
+    <!-- Buttons !-->
+    <string name="btnOK">OK</string>
+    <string name="btnSave">Сохранить</string>
+    <string name="btnCancel">Отмена</string>
+    <string name="btnCreateDBCaption">Новая БД</string>
+    <string name="btnImportDirectoriesCaption">Импорт из CSV</string>
+    <string name="btnExportDataCaption">Экспорт в CSV</string>
+    <string name="btnBrowseGenres">Жанры</string>
+    <string name="btnBrowseAuthors">Авторы</string>
+    <string name="btnBrowseBooks">Книги</string>
+    <string name="btnBrowseClients">Клиенты</string>
+    <string name="btnBrowseBooksOutlet">Выдача\nкниг</string>
+    <string name="btnBrowseBooksReturn">Возврат\nкниг</string>
+    <string name="btnBrowseUnreturnedBooks">Книги\nна руках</string>
+    <string name="btnBrowseArchive">Архив</string>
+
+    <!-- Captions !-->
+    <string name="WarningMsgCaption">Подтверждение</string>
+    <string name="AddNewRecordCaption">Добавление новой записи</string>
+	<string name="UpdateRecordCaption">Изменение записи</string>	
+    <string name="AddNewRecordGenreText">Название жанра:</string>
+
+    <!-- Messages !-->
+    <string name="ConfirmCreateDatabaseMsg">
+        Создать новую базу данных?\n
+        Старые данные будут уничтожены.
+    </string>
+    <string name="ErrorMsg">Ошибка</string>
+    <string name="DatabaseIsCreatedMsg">База данных создана</string>
+    <string name="CantCreateWorkingDirectoriesMsg">Ошибка создания рабочих каталогов</string>
+    <string name="ConfirmImportDataMsg">
+        Импортировать данные?
+        Записи будут добавлены к существующим.
+    </string>
+    <string name="ConfirmDeleteRecordMsg">Удалить эту запись?</string>
+    <string name="RecordIsNotAppended">Запись не добавлена</string>
+    <string name="ImportDataDisplayFormat" formatted="false">%s: импортировано %d из %d"</string>
+    <string name="DataIsImported">Импорт завершен</string>
+    <string name="title_activity_browse_genres">Genres</string>
+    <string name="browseGenresGridColumnNameCaption">Жанры</string>
+    <string name="browseBooksGridColumnNameCaption">Книги</string>
+    <string name="recordCountTextTemplate">Всего: %d</string>
+    <string name="title_activity_browse_Books">Книги</string>
+
+    <string name="ModiBook_BookNameIsEmptyMsg">Поле \"Название книги\" не заполнено!</string>
+    <string name="FragmentModiCatalogBookAuthorIsEmptyMsg">Поле \"Автор книги\" не заполнено!</string>
+    <string name="FragmentModiCatalogBookGenreIsEmptyMsg">Поле \"Жанр книги\" не заполнено!</string>
+    <string name="ModiBook_ClientIsEmptyMsg">Поле \"Читатель\" не заполнено!</string>
+    <string name="ModiBook_BookUnknownFieldIsEmptyMsg">Поле с названием не заполнено!</string>
+
+    <string name="FragmentModiClientFieldFirstNameIsEmptyMsg">Поле \"Фамилия\" не заполнено!</string>
+    <string name="ModiBook_CompareDatesWrongResultMsg">Дата возврата книги не должна быть больше даты выдачи!</string>
+
+    <!-- Buttons captions !-->
+    <string name="btnAddCaption">Добавить</string>
+    <string name="btnModiCaption">Изменить</string>
+    <string name="btnDelCaption">Удалить</string>
+    <string name="genre_field_id">ID</string>
+    <string name="genre_field_name">NAME</string>
+    <string name="title_activity_confirm_delete_record_dialog">ConfirmDeleteRecordDialogActivity
+    </string>
+
+    <string name="title_activity_dialog_confirm_delete_record">DialogConfirmDeleteRecord</string>
+    <string name="title_activity_add_genre">AddGenreActivity</string>
+    <string name="title_activity_browse_book">BrowseBookActivity</string>
+
+    <!-- MainActivity filter button !-->
+    <string name="browseBooks_FilterButtonTitle">Фильтр</string>
+
+    <!-- Filter for books list !-->
+    <string name="title_activity_filter">Фильтр</string>
+    <string name="browseBooks_FilterItemCaption_ShowAllBooks">Все книги</string>
+    <string name="browseBooks_FilterItemCaption_ShowOutladBooks">Выданные книги</string>
+    <string name="browseBooks_FilterItemCaption_ShowNotOutladBooks">Не выданные книги</string>
+    <string name="browseBooks_RefreshButtonTitle">Обновить</string>
+    <string name="title_activity_modi_book">Изменить книгу</string>
+
+    <!-- Modi book !-->
+    <string name="modibook_BookNameCaption_field">Название</string>
+    <string name="modibook_BookAuthorCaption_field">Автор</string>
+    <string name="modibook_BookGenreCaption_field">Жанр</string>
+    <string name="modibook_BookPublisherCaption_field">Издатель</string>
+    <string name="modibook_BookYearCaption_field">Год издания</string>
+    <string name="AppCommentCaption">Примечание</string>
+    <string name="modibook_BookHeader">Книга</string>
+    <string name="Modibook_BookState_isFree">Книга свободна</string>
+    <string name="Modibook_BookState_isInUse">Книга выдана</string>
+
+    <!-- Name of the images directory !-->
+    <string name="BookPhotosDirectory">BookPhotosDirectory</string>
+
+    <!-- Select image dialog !-->
+    <string name="GetImageDialogCaption">Выбрать картинку</string>
+    <string-array
+        name="GetImageDialogItems">
+        <item>Картинки</item>
+        <item>Сделать снимок</item>
+        <item>Удалить</item>
+    </string-array>
+
+    <string name="ModiBook_GiveBookMsg">Выдать книгу клиенту</string>
+    <string name="ModiBook_ReturnBookMsg">Принять книгу от клиента</string>
+
+    <!-- Select client  !-->
+    <string name="ModiBook_FullClientNameCaption">Читатель</string>
+    <string name="FragmentClientSelectDateCheckOutCaption">Дата выдачи книги</string>
+    <string name="FragmentClientSelectDateReturnCaption">Дата возврата книги</string>
+
+    <!-- Edit client fragment  !-->
+    <string name="FragmentClientFirstNameCaption">Фамилия</string>
+    <string name="FragmentClientLastNameCaption">Имя</string>
+    <string name="FragmentClientSurnameCaption">Отчество</string>
+    <string name="FragmentClientAddressCaption">Адрес</string>
+    <string name="FragmentClientPhoneCaption">Телефон</string>
+
+    <string name="action_about">О программе</string>
+
+    <!-- AboutBoxActivity resources -->
+    <string name="text_about_AboutBoxActivity">
+        Разработчик: Александр Дёмин\n
+        Эта программа позволяет вам вести учёт книг
+        вашей библиотеки.\n
+        Вы можете добавлять книги, удалять их, выдавать их на руки
+        вашим друзьям и клиентам.\n
+        Для каждой книги указывается название, жанр, автор,
+        издательство и год выпуска книги.
+        Вы можете так же задать обложку книги в виде фотографии.
+        Поддерживаются как существующие картинки на устройстве,
+        так и получение снимка фотокамерой.\n
+        Список авторов и жанры можно редактировать.
+        Поддерживается добавление, изменение и удаление записей.
+        При выдаче книги указывается ФИО вашего друга или клиента.
+        Список клиентов так же можно редактировать.\n
+        Так же указывается дата выдачи книги (по умолчанию, текущая дата)
+        и дата возврата книги (по умолчанию, текущая дата + 1 день).
+
+    </string>
+
+    <string name="delphi_manager">
+        Manager: Valeriy Bilokonnyy
+    </string>
+
+    <string name="delphi_training_center">
+        Training center
+    </string>
+
+    <!-- AboutBoxActivity -->
+    <string name="title_activity_about_box">О программе</string>
+
+
+    <string name="eula">
+END USER LICENSE FOR ANDROID LibrarianTool SOFTWARE\n
+PLEASE READ THIS DOCUMENT CAREFULLY BEFORE USING THIS SOFTWARE.
+THIS LICENSE PROVIDES IMPORTANT INFORMATION CONCERNING THE SOFTWARE,
+PROVIDES YOU WITH A LICENSE TO USE THE SOFTWARE AND CONTAINS WARRANTY
+AND LIABILITY INFORMATION.
+BY USING THE SOFTWARE, YOU ARE ACCEPTING THE SOFTWARE "AS IS" AND
+AGREEING TO BE BOUND BY THE TERMS OF THIS LICENSE AGREEMENT.
+IN NO EVENT WILL THE AUTHORS BE HELD LIABLE FOR ANY DAMAGES ARISING
+FROM THE USE OF THIS SOFTWARE.
+IF YOU DO NOT WISH TO DO SO, DO NOT USE THE SOFTWARE.\n\n
+
+1. Terms of License
+This license allows you to:
+(a) use the Software on a single device; and
+If you wish to use the Software on more than one device, you must license
+another copy of the Software.\n\n
+
+2. Restrictions on Use
+Unless Delphi (Owner) has authorized you to distribute the Software,
+you shall not make or distribute copies of the Software or transfer the Software
+from one device to another. You shall not decompile, reverse engineer,
+disassemble, include in other software, or translate the Software, or use
+the Software for any commercial purposes. You shall not modify, alter, change
+or otherwise make any modification to the Software or create derivative works
+based upon the Software. You shall not rent, lease, resell, sub-license, assign,
+distribute or otherwise transfer the Software or this license. Any attempt to do
+so shall be void and of no effect.\n\n
+
+3. Ownership
+This license provides you with limited rights to use the Software. The Owner retains
+all ownership, right, title and interest in, to and of the Software and all copies
+of it. All rights not specifically granted in this license, including domestic and
+international copyrights, are reserved by the Owner.\n\n
+
+4. Proprietary Markings
+The Owner\'s logos, product names, manuals, documentation, and other support
+materials are either patented, copyrighted, trademarked, constitute valuable trade secrets
+(whether or not any portion of them may be copyrighted or patented) or are otherwise
+proprietary to the Owner. You shall not remove or obscure the Owner\'s copyright, trade
+mark or other proprietary notices from any of the materials contained in this package
+or downloaded together with the Software.\n\n
+
+5. Disclaimer of Warranties and Technical Support
+The Software is provided to you after paying a licence and on an "AS IS" basis,
+ without any technical support or warranty of any kind including, without limitation,
+ any warranty or condition of merchantability, fitness for a particular purpose and
+ non-infringement.\n\n
+
+SOME JURISDICTIONS DO NOT ALLOW THE EXCLUSION OF IMPLIED WARRANTIES, SO THE ABOVE
+EXCLUSION MAY NOT APPLY TO YOU. YOU MAY ALSO HAVE OTHER LEGAL RIGHTS WHICH VARY FROM
+JURISDICTION TO JURISDICTION.
+    </string>
+
+    <string name="updates">
+<!--
+        Updates:\n
+        - Fixed some bugs.\n
+-->
+    </string>
+
+</resources>

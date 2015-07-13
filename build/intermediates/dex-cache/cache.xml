@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        jar="D:\PROJECTS\Android\LibrarianTool\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-safetynet\7.0.0\jars\classes.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="c976518693e89ad44fbfccfc654941eaec198d08">
+        <dex dex="D:\PROJECTS\Android\LibrarianTool\app\build\intermediates\pre-dexed\debug\classes-725c54e6970486af0592c9566dd884de12940917.jar" />
+    </item>
+    <item
+        jar="D:\PROJECTS\Android\LibrarianTool\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\22.0.0\jars\classes.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="d84409890828e07d344a3b9b1da545dba9897b51">
+        <dex dex="D:\PROJECTS\Android\LibrarianTool\app\build\intermediates\pre-dexed\debug\classes-d19b72a8cbfdeec81af9469e5661a8ebdc329008.jar" />
+    </item>
+    <item
+        jar="D:\PROJECTS\Android\LibrarianTool\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-identity\7.0.0\jars\classes.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="fb04b12526b0073c7fb1ebb70c5842d82ee95596">
+        <dex dex="D:\PROJECTS\Android\LibrarianTool\app\build\intermediates\pre-dexed\debug\classes-cbf979170d6d04f1122546492d33a5152ed8fd19.jar" />
+    </item>
+    <item
+        jar="D:\PROJECTS\Android\LibrarianTool\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-ads\7.0.0\jars\classes.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="e3d791b42eaa90416cd0b2d2e608092794a3baa4">
+        <dex dex="D:\PROJECTS\Android\LibrarianTool\app\build\intermediates\pre-dexed\debug\classes-63eb5f66638291c0bab16f67e887ccbe8dec43d1.jar" />
+    </item>
+    <item
+        jar="D:\PROJECTS\Android\LibrarianTool\app\build\intermediates\exploded-aar\com.android.support\support-v4\22.0.0\jars\classes.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="4e86306289ace4aa0cfec44a05ed2b410d36989d">
+        <dex dex="D:\PROJECTS\Android\LibrarianTool\app\build\intermediates\pre-dexed\debug\classes-2694f9ef5a7b9c0bdd495530f2d373fdaf8eaaf1.jar" />
+    </item>
+    <item
+        jar="D:\PROJECTS\Android\LibrarianTool\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-wearable\7.0.0\jars\classes.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="3033cc3a2c68dff3e5b646d6d084bdbdf7d00b25">
+        <dex dex="D:\PROJECTS\Android\LibrarianTool\app\build\intermediates\pre-dexed\debug\classes-6ebf2c0fb5c61436bb4bcdc07ae492cb8de0bc2e.jar" />
+    </item>
+    <item
+        jar="D:\PROJECTS\Android\LibrarianTool\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-fitness\7.0.0\jars\classes.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="3c0b099f9de16b265ecd6122fcb603e7d0d29f90">
+        <dex dex="D:\PROJECTS\Android\LibrarianTool\app\build\intermediates\pre-dexed\debug\classes-150611c61910bb1dd7922ce0bb929ef87bbf8432.jar" />
+    </item>
+    <item
+        jar="D:\PROJECTS\Android\LibrarianTool\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-games\7.0.0\jars\classes.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="055783146ba9654a725442563be78cad303aad1f">
+        <dex dex="D:\PROJECTS\Android\LibrarianTool\app\build\intermediates\pre-dexed\debug\classes-7820c7d33adf19ff22cc6918d05fa5ac75df2178.jar" />
+    </item>
+    <item
+        jar="D:\PROJECTS\Android\LibrarianTool\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-wallet\7.0.0\jars\classes.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="a96b762bde4139de855735f175ec4d17dca55a6d">
+        <dex dex="D:\PROJECTS\Android\LibrarianTool\app\build\intermediates\pre-dexed\debug\classes-3aaa75898e8a392fdc6bf5d19d57ba6d31143380.jar" />
+    </item>
+    <item
+        jar="D:\PROJECTS\Android\LibrarianTool\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-gcm\7.0.0\jars\classes.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="9224bc4c54ba95147c7eabd874573763c07cb6be">
+        <dex dex="D:\PROJECTS\Android\LibrarianTool\app\build\intermediates\pre-dexed\debug\classes-aa1875d832b1679cf318d2b5493b1f30588ddeb2.jar" />
+    </item>
+    <item
+        jar="C:\Program Files\Android\sdk\extras\android\m2repository\com\android\support\support-annotations\22.0.0\support-annotations-22.0.0.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="685d0b2c590447e85284ed84712cb363ba04eff8">
+        <dex dex="D:\PROJECTS\Android\LibrarianTool\app\build\intermediates\pre-dexed\debug\support-annotations-22.0.0-8c820441c10309bd648a271c070f597782dafcb7.jar" />
+    </item>
+    <item
+        jar="D:\PROJECTS\Android\LibrarianTool\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-appindexing\7.0.0\jars\classes.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="a08d65794b844d8e7540bf9a33859bf3b2482d7f">
+        <dex dex="D:\PROJECTS\Android\LibrarianTool\app\build\intermediates\pre-dexed\debug\classes-b9b1d7d76384160ddce418c910e6881fa5a37a4e.jar" />
+    </item>
+    <item
+        jar="D:\PROJECTS\Android\LibrarianTool\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-cast\7.0.0\jars\classes.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="4cd0b093824b3228fffc21ea369b98d0b1db6566">
+        <dex dex="D:\PROJECTS\Android\LibrarianTool\app\build\intermediates\pre-dexed\debug\classes-36e7467bd669c766225dc79e0435884b9f4d16af.jar" />
+    </item>
+    <item
+        jar="D:\PROJECTS\Android\LibrarianTool\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-base\7.0.0\jars\classes.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="4c93d99d454c975536bbe3b42283eee847f03ea3">
+        <dex dex="D:\PROJECTS\Android\LibrarianTool\app\build\intermediates\pre-dexed\debug\classes-ba9e5c4d95fb0545c76c577a7fb0e3d222875c61.jar" />
+    </item>
+    <item
+        jar="D:\PROJECTS\Android\LibrarianTool\app\build\intermediates\exploded-aar\com.android.support\support-v4\22.0.0\jars\libs\internal_impl-22.0.0.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="b5b92f469d515a13d778900f6d50c03d12f35504">
+        <dex dex="D:\PROJECTS\Android\LibrarianTool\app\build\intermediates\pre-dexed\debug\internal_impl-22.0.0-4aa8523dd0267652ca2a0da22a9172dbd509a9d8.jar" />
+    </item>
+    <item
+        jar="D:\PROJECTS\Android\LibrarianTool\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-appstate\7.0.0\jars\classes.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="7ff613bf78ab057293892fdbd4169eda899c89b9">
+        <dex dex="D:\PROJECTS\Android\LibrarianTool\app\build\intermediates\pre-dexed\debug\classes-9e82b61f61e5da02c5dc50afd8db748a9ffd3b0e.jar" />
+    </item>
+    <item
+        jar="D:\PROJECTS\Android\LibrarianTool\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-panorama\7.0.0\jars\classes.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="1c5a76debf0c2857ccad422c4a80ed785982f8df">
+        <dex dex="D:\PROJECTS\Android\LibrarianTool\app\build\intermediates\pre-dexed\debug\classes-c9dfbaddb556a8541127ebffcc3a556e5e45dd9a.jar" />
+    </item>
+    <item
+        jar="D:\PROJECTS\Android\LibrarianTool\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-plus\7.0.0\jars\classes.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="0e8228b4bc69c6a2c8d7c18498a77e53417d2574">
+        <dex dex="D:\PROJECTS\Android\LibrarianTool\app\build\intermediates\pre-dexed\debug\classes-463dd53ff09ae1f479d015bc38d371b4182d042f.jar" />
+    </item>
+    <item
+        jar="D:\PROJECTS\Android\LibrarianTool\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-nearby\7.0.0\jars\classes.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="ef5f051e7308febe289dc93c67c5f32785b4260a">
+        <dex dex="D:\PROJECTS\Android\LibrarianTool\app\build\intermediates\pre-dexed\debug\classes-6ee30e072b59757699bd8a4b3d73089c26ea3cbb.jar" />
+    </item>
+    <item
+        jar="D:\PROJECTS\Android\LibrarianTool\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-location\7.0.0\jars\classes.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="73ccb92b70112f2e463e415ef8d7275de7da6516">
+        <dex dex="D:\PROJECTS\Android\LibrarianTool\app\build\intermediates\pre-dexed\debug\classes-c968544d0a6b8d117a525674dcea4c24d801de91.jar" />
+    </item>
+    <item
+        jar="D:\PROJECTS\Android\LibrarianTool\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-drive\7.0.0\jars\classes.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="41b3870cbe5fa546d8095b5b89d42cb69f3dd175">
+        <dex dex="D:\PROJECTS\Android\LibrarianTool\app\build\intermediates\pre-dexed\debug\classes-4b63f2fe7d5214e4731de03eeedee657d4d6bace.jar" />
+    </item>
+    <item
+        jar="D:\PROJECTS\Android\LibrarianTool\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-analytics\7.0.0\jars\classes.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="29fd6d3794b71491c2789708cd8d03c71feb8954">
+        <dex dex="D:\PROJECTS\Android\LibrarianTool\app\build\intermediates\pre-dexed\debug\classes-690139412aded5560271da9ced0d39bfb0e0334f.jar" />
+    </item>
+    <item
+        jar="D:\PROJECTS\Android\LibrarianTool\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-maps\7.0.0\jars\classes.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="17f8750d5c0749e44dd7c54aa390d9c937803825">
+        <dex dex="D:\PROJECTS\Android\LibrarianTool\app\build\intermediates\pre-dexed\debug\classes-01d188cca3b5048aa4053e13e66966bd1c85f976.jar" />
+    </item>
+
+</items>

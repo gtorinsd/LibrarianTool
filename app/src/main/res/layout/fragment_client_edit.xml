@@ -1,0 +1,161 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.udelphi.librariantool.FragmentClientEdit">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <!-- First name !-->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="@string/FragmentClientFirstNameCaption"
+                android:id="@+id/FragmentClientTextViewFirstName"
+                style="@style/LabelCaptionInActivity"
+                />
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/FragmentClientEditTextFirstName"
+                android:inputType="text"
+                android:layout_marginBottom="@dimen/EditsMargin"
+                style="@style/SimpleEditTextStyle"
+                />
+            <!-- Last name !-->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="@string/FragmentClientLastNameCaption"
+                android:id="@+id/FragmentClientTextViewLastName"
+                style="@style/LabelCaptionInActivity"
+                />
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/FragmentClientEditTextLastName"
+                android:inputType="text"
+                android:layout_marginBottom="@dimen/EditsMargin"
+                style="@style/SimpleEditTextStyle"
+                />
+            <!-- Surname !-->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="@string/FragmentClientSurnameCaption"
+                android:id="@+id/FragmentClientTextViewSurname"
+                style="@style/LabelCaptionInActivity"
+                />
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/FragmentClientEditTextSurname"
+                android:inputType="text"
+                android:layout_marginBottom="@dimen/EditsMargin"
+                style="@style/SimpleEditTextStyle"
+                />
+            <!-- Address !-->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="@string/FragmentClientAddressCaption"
+                android:id="@+id/FragmentClientTextViewAddress"
+                style="@style/LabelCaptionInActivity"
+                />
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/FragmentClientEditTextAddress"
+                android:inputType="text"
+                android:layout_marginBottom="@dimen/EditsMargin"
+                style="@style/SimpleEditTextStyle"
+                />
+            <!-- Phone !-->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="@string/FragmentClientPhoneCaption"
+                android:id="@+id/FragmentClientTextViewPhone"
+                style="@style/LabelCaptionInActivity"
+                />
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/FragmentClientEditTextPhone"
+                android:inputType="phone"
+                android:layout_marginBottom="@dimen/EditsMargin"
+                style="@style/SimpleEditTextStyle"
+                />
+            <!-- Comment !-->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="@string/AppCommentCaption"
+                android:id="@+id/FragmentClientTextViewComment"
+                style="@style/LabelCaptionInActivity"
+                />
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/FragmentClientEditTextComment"
+                android:layout_marginBottom="@dimen/EditsMargin"
+                style="@style/CommentsEditTextStyle"
+                />
+        </LinearLayout>
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_gravity="bottom"
+            >
+            <TableRow>
+                <ImageButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/FragmentImageButtonClientAdd"
+                    android:layout_gravity="left|top"
+                    android:src="@drawable/add" />
+
+                <ImageButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/FragmentImageButtonClientModi"
+                    android:layout_gravity="center_horizontal|top"
+                    android:src="@drawable/check" />
+
+                <ImageButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/FragmentImageButtonClientDel"
+                    android:layout_gravity="right|top"
+                    android:src="@drawable/del" />
+
+                <ImageButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/FragmentImageButtonClientRefresh"
+                    android:layout_gravity="right|center_vertical"
+                    android:src="@drawable/undo"
+                    android:layout_column="4" />
+
+                <ImageButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/FragmentImageButtonClientCancel"
+                    android:layout_gravity="right|center_vertical"
+                    android:src="@drawable/closeup" />
+            </TableRow>
+        </TableLayout>
+    </LinearLayout>
+</FrameLayout>

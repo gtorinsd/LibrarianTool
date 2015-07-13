@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/linearLayoutCaption"
+    android:orientation="horizontal">
+
+    <ImageView
+        android:layout_width="@dimen/BookImageSizePreview"
+        android:layout_height="@dimen/BookImageSizePreview"
+        android:id="@+id/browsebook_field_photo"
+        android:contentDescription="BookPhoto" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <!-- _ID !-->
+        <TextView
+            android:id="@+id/browsebook_field_id"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:visibility="invisible"
+            android:width="0dp"
+            android:height="0dp"
+            android:text="@string/genre_field_id"
+            android:textSize="@dimen/GridTextFontSize">
+        </TextView>
+
+        <!-- BookName !-->
+        <TextView
+            android:id="@+id/browsebook_field_name"
+            android:layout_weight="0"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="Название"
+            android:paddingRight="@dimen/record_padding"
+            android:paddingLeft="@dimen/record_padding"
+            style="@style/TextViewBookNameStyle">
+        </TextView>
+
+        <!-- Author !-->
+        <TextView
+            android:id="@+id/browsebook_field_author"
+            android:layout_weight="0"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="Автор"
+            android:paddingRight="@dimen/record_padding"
+            android:paddingLeft="@dimen/record_padding"
+            style="@style/TextViewAuthorNameStyle">
+        </TextView>
+
+        <!-- Genre !-->
+        <TextView
+            android:id="@+id/browsebook_field_genre"
+            android:layout_weight="0"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="Жанр"
+            android:paddingRight="@dimen/record_padding"
+            android:paddingLeft="@dimen/record_padding">
+        </TextView>
+
+    </LinearLayout>
+</LinearLayout>

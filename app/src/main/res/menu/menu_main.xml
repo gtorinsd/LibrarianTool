@@ -1,0 +1,42 @@
+<menu
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools" tools:context=".MainActivity">
+
+    <!-- Refresh button !-->
+    <item android:id="@+id/browsebook_add"
+        android:title="@string/btnAddCaption"
+        android:icon="@drawable/add"
+        android:orderInCategory="100"
+        android:showAsAction="always"
+        />
+
+    <!-- Refresh button !-->
+    <item android:id="@+id/browsebook_refresh"
+        android:title="@string/browseBooks_RefreshButtonTitle"
+        android:icon="@drawable/refresh"
+        android:orderInCategory="100"
+        android:showAsAction="always"
+        />
+
+    <!-- Filter button !-->
+    <item android:id="@+id/browsebook_filter"
+        android:title="@string/browseBooks_FilterButtonTitle"
+        android:icon="@drawable/filter"
+        android:orderInCategory="100"
+        android:showAsAction="always"
+        />
+
+    <!-- Tools menu !-->
+    <item android:id="@+id/action_tools"
+        android:title="@string/action_tools"
+        android:orderInCategory="100"
+        android:visible="false"
+        app:showAsAction="never" />
+
+    <item android:id="@+id/action_about"
+        android:title="@string/action_about"
+        android:orderInCategory="100"
+        app:showAsAction="never"/>
+
+</menu>

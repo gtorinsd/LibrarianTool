@@ -1,0 +1,33 @@
+<resources>
+
+    <style name="FullscreenTheme" parent="android:Theme.Holo">
+        <item name="android:actionBarStyle">@style/FullscreenActionBarStyle</item>
+        <item name="android:windowActionBarOverlay">true</item>
+        <item name="android:windowBackground">@null</item>
+        <item name="metaButtonBarStyle">?android:attr/buttonBarStyle</item>
+        <item name="metaButtonBarButtonStyle">?android:attr/buttonBarButtonStyle</item>
+    </style>
+
+    <style name="FullscreenActionBarStyle" parent="android:Widget.Holo.Light">
+        <item name="android:background">@color/black_overlay</item>
+    </style>
+
+    <!-- Edit texts style !-->>
+    <!-- Simple EditText style !-->
+    <style name="SimpleEditTextStyle">
+        <item name="android:background">@android:drawable/edit_text</item>
+        <item name="android:maxLength">@integer/EditTextMaxTextLength</item>
+        <item name="android:singleLine">true</item>
+    </style>
+
+    <!-- Comments EditText style !-->
+    <style name="CommentsEditTextStyle">
+        <item name="android:background">@android:drawable/edit_text</item>
+        <item name="android:maxLength">@integer/EditTextCommentsMaxTextLength</item>
+        <item name="android:singleLine">false</item>
+        <item name="android:scrollbarFadeDuration">0</item>
+        <item name="android:scrollbarAlwaysDrawVerticalTrack">true</item>
+        <item name="android:inputType">textMultiLine</item>
+    </style>
+
+</resources>

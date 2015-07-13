@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:id="@+id/browsebooks_popupmenu"
+        android:checkableBehavior="single">
+        <item
+            android:id="@+id/browseBooks_FilterItem_ShowAllBooks"
+            android:title="@string/browseBooks_FilterItemCaption_ShowAllBooks"
+            android:checked="true"
+            />
+        <item
+            android:id="@+id/browseBooks_FilterItem_ShowOutladBooks"
+            android:title="@string/browseBooks_FilterItemCaption_ShowOutladBooks"
+            />
+        <item
+            android:id="@+id/browseBooks_FilterItem_ShowNotOutladBooks"
+            android:title="@string/browseBooks_FilterItemCaption_ShowNotOutladBooks"
+            />
+    </group>
+</menu>

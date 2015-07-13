@@ -1,0 +1,43 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.udelphi.librariantool.ModiBookActivity">
+
+    <item
+        android:id="@+id/ModiBookBtnCancel"
+        android:title="@string/btnCancel"
+        android:orderInCategory="100"
+        android:showAsAction="always" />
+    <item
+        android:id="@+id/ModiBookBtnOk"
+        android:title="@string/btnSave"
+        android:orderInCategory="100"
+        android:showAsAction="always" />
+
+    <!-- Refresh record menu items !-->
+    <item android:id="@+id/ModiBookRefreshMenuItem"
+        android:title="@string/browseBooks_RefreshButtonTitle"
+        android:orderInCategory="100"
+        app:showAsAction="always" />
+
+    <!-- Delete record menu items !-->
+    <item android:id="@+id/ModiBookDeleteMenuItem"
+        android:title="@string/btnDelCaption"
+        android:orderInCategory="100"
+        app:showAsAction="always" />
+
+    <!-- Checkin the book menu items !-->
+    <item android:id="@+id/ModiBookCheckoutMenuItem"
+        android:title="@string/ModiBook_GiveBookMsg"
+        android:orderInCategory="100"
+        app:showAsAction="always" />
+
+    <!-- Return the book menu items !-->
+    <item android:id="@+id/ModiBookReturnMenuItem"
+        android:title="@string/ModiBook_ReturnBookMsg"
+        android:orderInCategory="100"
+        app:showAsAction="always" />
+
+
+    ModiBook_ReturnBookMsg
+</menu>

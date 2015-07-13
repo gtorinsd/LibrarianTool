@@ -1,0 +1,6 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.udelphi.librariantool.ToolsActivity">
+</menu>
+<!-- From: file:/D:/PROJECTS/Android/LibrarianTool/app/src/main/res/menu/menu_tools.xml -->

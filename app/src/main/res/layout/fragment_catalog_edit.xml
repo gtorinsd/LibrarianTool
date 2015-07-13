@@ -1,0 +1,68 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context="com.udelphi.librariantool.FragmentCatalogEdit"
+    android:orientation="vertical"
+    android:background="@drawable/gridrecord">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:id="@+id/FragmentEditTextCatalog"
+            style="@style/SimpleEditTextStyle"
+            />
+    </LinearLayout>
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        >
+        <TableRow>
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/FragmentImageButtonCatalogAdd"
+            android:layout_gravity="left|top"
+            android:src="@drawable/add"
+            android:longClickable="false" />
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/FragmentImageButtonCatalogModi"
+            android:layout_gravity="center_horizontal|top"
+            android:src="@drawable/check" />
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/FragmentImageButtonCatalogDel"
+            android:layout_gravity="right|top"
+            android:src="@drawable/del" />
+
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/FragmentImageButtonCatalogUndo"
+                android:layout_gravity="right|center_vertical"
+                android:src="@drawable/undo"
+                android:layout_column="4" />
+
+            <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/FragmentImageButtonCatalogCancel"
+            android:layout_gravity="right|center_vertical"
+            android:src="@drawable/closeup" />
+
+        </TableRow>
+    </TableLayout>
+
+</LinearLayout>

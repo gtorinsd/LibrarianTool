@@ -1675,20 +1675,20 @@
     </string><string name="ModiBook_GiveBookMsg">Выдать книгу читателю</string><string name="FragmentModiCatalogBookGenreIsEmptyMsg">Поле \"Жанр книги\" не заполнено!</string><string name="DataIsImported">Импорт завершен</string><string name="ModiBook_FullClientNameCaption">Читатель</string><string name="ModiBook_CantDeleteBook_errorMsg">Ошибка: Книга не удалена!</string><string name="WarningMsgCaption">Подтверждение</string><string name="title_activity_browse_book">BrowseBookActivity</string><string name="UpdateRecordCaption">Изменение записи</string><string name="title_activity_dialog_confirm_delete_record">DialogConfirmDeleteRecord</string><string name="browseBooks_RefreshButtonTitle">Обновить</string><string name="FragmentClientSelectDateReturnCaption">Дата возврата книги</string><string name="recordCountTextTemplate">Всего: %d</string><string name="FragmentModiClientFieldFirstNameIsEmptyMsg">Поле \"Фамилия\" не заполнено!</string><string name="Modibook_BookState_isInUse">Книга выдана</string><string name="ModiBook_CompareDatesWrongResultMsg">Дата возврата книги не должна быть больше даты выдачи!</string><string name="browseGenresGridColumnNameCaption">Жанры</string><string name="btnBrowseUnreturnedBooks">Книги\nна руках</string><string name="title_activity_filter">Фильтр</string><string name="btnBrowseBooksOutlet">Выдача\nкниг</string><string name="AppCommentCaption">Примечание</string><string name="modibook_BookNameCaption_field">Название</string><string name="browseBooks_FilterItemCaption_ShowNotOutladBooks">Не выданные книги</string><string name="btnSave">Сохранить</string><string name="delphi_training_center">
         Training center
     </string><string name="btnBrowseAuthors">Авторы</string><string name="ModiBook_BookNameIsEmptyMsg">Поле \"Название книги\" не заполнено!</string><string name="browseBooks_FilterItemCaption_ShowOutladBooks">Выданные книги</string><string name="action_tools">Сервис</string><string name="btnBrowseGenres">Жанры</string><string name="DatabaseIsCreatedMsg">База данных создана</string><string name="btnOK">OK</string><string name="AddNewRecordCaption">Добавление новой записи</string><string name="ModiBook_BookUnknownFieldIsEmptyMsg">Поле с названием не заполнено!</string><string name="title_activity_about_box">О программе</string><string name="BookPhotosDirectory">BookPhotosDirectory</string><string name="text_about_AboutBoxActivity">
-        Разработчик: Александр Дёмин\n
-        Эта программа позволяет вам вести учёт книг
+        \tРазработчик: Александр Дёмин\n
+        \tЭта программа позволяет вам вести учёт книг
         вашей библиотеки.\n
-        Вы можете добавлять книги, удалять их, выдавать их на руки
+        \tВы можете добавлять книги, удалять их, выдавать их на руки
         вашим друзьям и клиентам.\n
-        Для каждой книги указывается название, жанр, автор,
+        \tДля каждой книги указывается название, жанр, автор,
         издательство и год выпуска книги.
-        Вы можете так же задать обложку книги в виде фотографии.
-        Поддерживаются как существующие картинки на устройстве,
+        \tВы можете так же задать обложку книги в виде фотографии.
+        \tПоддерживаются как существующие картинки на устройстве,
         так и получение снимка с помощью фотокамерой.\n
-        Список авторов и жанры можно редактировать.
-        При выдаче книги указывается ФИО вашего друга или клиента.
-        Список клиентов так же можно редактировать.\n
-        Так же указывается дата выдачи книги (по умолчанию, текущая дата)
+        \tСписок авторов и жанры можно редактировать.
+        \tПри выдаче книги указывается ФИО вашего друга или клиента.
+        \tСписок клиентов так же можно редактировать.\n
+        \tТак же указывается дата выдачи книги (по умолчанию, текущая дата)
         и дата возврата книги (по умолчанию, текущая дата + 1 день).
     </string><string name="ConfirmImportDataMsg">
         Импортировать данные?

@@ -3,6 +3,7 @@
     <!-- Base application theme. -->
     <style name="AppTheme" parent="android:Theme.Holo.Light">
         <!-- Customize your theme here. -->
+        <item name="popupMenuStyle">@style/popupMenuStyle</item>
     </style>
 
     <style name="FullscreenTheme" parent="android:Theme.NoTitleBar">
@@ -68,8 +69,11 @@
         <item name="android:textColor">#ff5d4ee1</item>
     </style>
 
-    <style name="SpinnerStyle">
-        <item name="android:background">@android:drawable/btn_dropdown</item>
+    <style name="SpinnerStyle" parent="@android:style/Widget.Holo.DropDownItem.Spinner">
+        <!--<item name="android:background">@android:drawable/btn_dropdown</item>-->
+        <item name="android:background">@drawable/spinner_style</item>
+        <item name="android:popupBackground">@android:drawable/dialog_holo_light_frame</item>
+
     </style>
 
     <style name="LabelCaptionInActivity">
@@ -107,6 +111,7 @@
         <item name="android:background">@android:drawable/edit_text</item>
         <item name="android:maxLength">@integer/EditTextMaxTextLength</item>
         <item name="android:singleLine">true</item>
+        <item name="android:textSize">@dimen/EditTextFontSize</item>
     </style>
 
     <!-- Comments EditText style !-->
@@ -117,6 +122,19 @@
         <item name="android:scrollbarFadeDuration">0</item>
         <item name="android:scrollbarAlwaysDrawVerticalTrack">true</item>
         <item name="android:inputType">textMultiLine</item>
+        <item name="android:textSize">@dimen/EditTextFontSize</item>
+    </style>
+
+    <!-- ImageButton style !-->
+    <style name="ImageButtonStyle" parent="@android:drawable/edit_text">
+        <item name="android:background">@android:drawable/edit_text</item>
+    </style>
+
+    <style name="popupMenuStyle" parent="android:Widget.Holo.PopupMenu">
+        <item name="android:popupMenuStyle">@android:color/black</item>
+        <item name="android:popupBackground">@android:color/background_light</item>
+
+        <item name="android:textColor">@android:color/black</item>
     </style>
 
 </resources>

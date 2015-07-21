@@ -1,7 +1,7 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    tools:context="com.udelphi.librariantool.ModiBookActivity">
+    tools:context="com.udelphi.trainingcenter.librariantool.ModiBookActivity">
 
     <item
         android:id="@+id/ModiBookBtnCancel"
@@ -12,13 +12,8 @@
         android:id="@+id/ModiBookBtnOk"
         android:title="@string/btnSave"
         android:orderInCategory="100"
+        android:visible="false"
         android:showAsAction="always" />
-
-    <!-- Refresh record menu items !-->
-    <item android:id="@+id/ModiBookRefreshMenuItem"
-        android:title="@string/browseBooks_RefreshButtonTitle"
-        android:orderInCategory="100"
-        app:showAsAction="always" />
 
     <!-- Delete record menu items !-->
     <item android:id="@+id/ModiBookDeleteMenuItem"
@@ -37,8 +32,5 @@
         android:title="@string/ModiBook_ReturnBookMsg"
         android:orderInCategory="100"
         app:showAsAction="always" />
-
-
-    ModiBook_ReturnBookMsg
 </menu>
 <!-- From: file:/D:/PROJECTS/Android/LibrarianTool/app/src/main/res/menu/menu_modi_book.xml -->

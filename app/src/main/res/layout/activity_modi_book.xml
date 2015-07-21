@@ -7,7 +7,7 @@
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
     android:paddingBottom="@dimen/activity_vertical_margin"
-    tools:context="com.udelphi.librariantool.ModiBookActivity">
+    tools:context="com.udelphi.trainingcenter.librariantool.ModiBookActivity">
 
     <ScrollView
         android:layout_width="match_parent"
@@ -19,15 +19,7 @@
             android:layout_height="wrap_content"
             android:weightSum="1"
             android:paddingRight="8dp">
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:textAppearance="?android:attr/textAppearanceMedium"
-                android:text="@string/modibook_BookHeader"
-                android:id="@+id/ModiBook_TextViewBookState"
-                android:gravity="center_horizontal"
-                style="@style/ModiBookTextViewBookStateStyle"
-                android:textStyle="bold" />
+
             <LinearLayout
                 android:orientation="horizontal"
                 android:layout_width="match_parent"
@@ -54,10 +46,12 @@
             </LinearLayout>
 
             <!-- Select client !-->
+
             <LinearLayout
                 android:orientation="vertical"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content">
+                android:layout_height="wrap_content"
+                android:id="@+id/ModiBookMainDataLayout">
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -87,7 +81,7 @@
                     android:layout_height="wrap_content"
                     android:id="@+id/ModiBookEditTextPublisher"
                     android:inputType="text"
-                    android:layout_marginBottom="@dimen/EditsMargin"
+                    android:layout_marginBottom="@dimen/ControlsMargin"
                     style="@style/SimpleEditTextStyle"
                     />
 
@@ -106,7 +100,7 @@
                     android:text=""
                     android:inputType="number"
                     android:singleLine="true"
-                    android:layout_marginBottom="@dimen/EditsMargin"
+                    android:layout_marginBottom="@dimen/ControlsMargin"
                     android:maxLength="4"
                     style="@style/SimpleEditTextStyle"
                     />
@@ -123,14 +117,15 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:id="@+id/ModiBookEditTextComment"
-                    android:layout_marginBottom="@dimen/EditsMargin"
+                    android:layout_marginBottom="@dimen/ControlsMargin"
                     style="@style/CommentsEditTextStyle"
                     />
 
                 <LinearLayout
                         android:orientation="vertical"
                         android:layout_width="match_parent"
-                        android:layout_height="match_parent">
+                        android:layout_height="match_parent"
+                        android:id="@+id/ModiBookSelectAuthorLayout">
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
@@ -142,13 +137,12 @@
                         <LinearLayout
                             android:orientation="horizontal"
                             android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
+                            android:layout_height="match_parent"
                             android:id="@+id/ModiBookAuthorLayout"
-                            android:layout_marginBottom="@dimen/EditsMargin"
                             >
                             <Spinner
                                 android:layout_width="0dp"
-                                android:layout_height="wrap_content"
+                                android:layout_height="match_parent"
                                 android:id="@+id/ModiBookSpinnerAuthor"
                                 android:singleLine="true"
                                 android:layout_weight="1"
@@ -156,27 +150,30 @@
                                 />
                             <ImageButton
                                 android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:layout_gravity="top"
+                                android:layout_height="match_parent"
                                 android:id="@+id/ModiBookImageButtonModiAuthor"
                                 android:src="@drawable/modi"
                                 android:contentDescription="@string/btnModiCaption"
                                 android:focusableInTouchMode="false"
-                                android:clickable="true" />
+                                android:clickable="true"
+                                android:layout_gravity="center"
+                                style="@style/ImageButtonStyle"
+                                />
                         </LinearLayout>
                         <LinearLayout
                             android:id="@+id/ModiBook_ModiAuthorFragment"
                             android:orientation="vertical"
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
-                            android:background="@drawable/gridrecord">
+                            >
                         </LinearLayout>
-                    </LinearLayout>
+                </LinearLayout>
                 <LinearLayout
                         android:orientation="vertical"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
-                        android:layout_marginBottom="@dimen/EditsMargin">
+                        android:layout_marginBottom="@dimen/ControlsMargin"
+                        android:id="@+id/ModiBookSelectGenreLayout">
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
@@ -200,23 +197,24 @@
                                 />
                             <ImageButton
                                 android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:layout_gravity="top"
+                                android:layout_height="match_parent"
                                 android:id="@+id/ModiBookImageButtonModiGenre"
                                 android:src="@drawable/modi"
                                 android:contentDescription="@string/btnModiCaption"
                                 android:focusableInTouchMode="false"
-                                android:clickable="true" />
+                                android:clickable="true"
+                                android:layout_gravity="center"
+                                style="@style/ImageButtonStyle"
+                                />
                         </LinearLayout>
-
                         <LinearLayout
                             android:id="@+id/ModiBook_ModiGenreFragment"
                             android:orientation="vertical"
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
-                            android:background="@drawable/gridrecord">
+                            >
                         </LinearLayout>
-                    </LinearLayout>
+                </LinearLayout>
 
             </LinearLayout>
 
@@ -224,7 +222,19 @@
                 android:orientation="vertical"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:id="@+id/ModiBookSelectClientLayout">
+                android:id="@+id/ModiBookSelectClientLayout"
+                android:layout_marginBottom="@dimen/BookClientBottomMargin">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:text="@string/modibook_BookHeader"
+                    android:id="@+id/ModiBook_TextViewBookState"
+                    android:gravity="center_horizontal"
+                    style="@style/ModiBookTextViewBookStateStyle"
+                    android:textStyle="bold" />
+
                 <TextView
                     style="@style/LabelCaptionInActivity"
                     android:layout_width="wrap_content"
@@ -238,7 +248,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:id="@+id/ModiBookClientLayout"
-                    android:layout_marginBottom="@dimen/EditsMargin" >
+                    android:layout_marginBottom="@dimen/ControlsMargin" >
 
                     <Spinner
                         android:layout_width="0dp"
@@ -250,13 +260,15 @@
                         />
                     <ImageButton
                         android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_gravity="top"
+                        android:layout_height="match_parent"
                         android:id="@+id/ModiBookImageButtonModiClient"
                         android:src="@drawable/modi"
                         android:contentDescription="@string/btnModiCaption"
                         android:focusableInTouchMode="false"
-                        android:clickable="true" />
+                        android:clickable="true"
+                        android:layout_gravity="center"
+                        style="@style/ImageButtonStyle"
+                        />
                 </LinearLayout>
 
                 <!-- Fragment edit client place !-->
@@ -293,10 +305,11 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:ems="10"
-                            android:background="@drawable/gridrecord"
                             android:id="@+id/ModiBookEditTextCheckoutBook"
                             android:editable="false"
-                            android:layout_gravity="left" />
+                            android:layout_gravity="left"
+                            style="@style/SimpleEditTextStyle"
+                            />
                     </LinearLayout>
 
                     <LinearLayout
@@ -318,13 +331,15 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:ems="10"
-                            android:background="@drawable/gridrecord"
                             android:id="@+id/ModiBookEditTextReturnBook"
                             android:editable="false"
-                            android:layout_gravity="right" />
+                            android:layout_gravity="right"
+                            style="@style/SimpleEditTextStyle"
+                            />
                     </LinearLayout>
                 </LinearLayout>
             </LinearLayout>
+
         </LinearLayout>
 
     </ScrollView>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/ModiBook_PopupMenuItem_AddNewRecord"
+        android:title="@string/btnAddCaption"
+        />
+
+    <item android:id="@+id/ModiBook_PopupMenuItem_ModiRecord"
+        android:title="@string/btnModiCaption"
+        />
+</menu>

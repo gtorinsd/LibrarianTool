@@ -1,5 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <!-- From: file:/D:/PROJECTS/Android/LibrarianTool/app/src/main/res/values-v11/styles.xml -->
+    <eat-comment/>
+    <style name="AppTheme" parent="android:Theme.Holo.Light">
+        <!-- Customize your theme here. -->
+        <item name="popupMenuStyle">@style/popupMenuStyle</item>
+    </style>
     <!-- From: file:/D:/PROJECTS/Android/LibrarianTool/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.0.0/res/values-v11/values.xml -->
     <eat-comment/>
     <style name="Base.TextAppearance.AppCompat.Inverse">
@@ -187,6 +193,14 @@
     </style>
     <!-- From: file:/D:/PROJECTS/Android/LibrarianTool/app/src/main/res/values-v11/styles.xml -->
     <eat-comment/>
+    <style name="ButtonBar">
+        <item name="android:paddingLeft">2dp</item>
+        <item name="android:paddingTop">5dp</item>
+        <item name="android:paddingRight">2dp</item>
+        <item name="android:paddingBottom">0dp</item>
+        <item name="android:background">@android:drawable/bottom_bar</item>
+    </style>
+    <style name="ButtonBarButton"/>
     <style name="CommentsEditTextStyle">
         <item name="android:background">@android:drawable/edit_text</item>
         <item name="android:maxLength">@integer/EditTextCommentsMaxTextLength</item>
@@ -194,16 +208,53 @@
         <item name="android:scrollbarFadeDuration">0</item>
         <item name="android:scrollbarAlwaysDrawVerticalTrack">true</item>
         <item name="android:inputType">textMultiLine</item>
+        <item name="android:textSize">@dimen/EditTextFontSize</item>
     </style>
-    <style name="FullscreenActionBarStyle" parent="android:Widget.Holo.Light">
-        <item name="android:background">@color/black_overlay</item>
+    <style name="DialogActivityButtonsLayoutStyle">
+        <item name="android:background">#005EAC</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">fill_parent</item>
+        <item name="android:orientation">horizontal</item>
+        <item name="android:gravity">center_vertical</item>
     </style>
-    <style name="FullscreenTheme" parent="android:Theme.Holo">
-        <item name="android:actionBarStyle">@style/FullscreenActionBarStyle</item>
-        <item name="android:windowActionBarOverlay">true</item>
+    <style name="DialogActivityButtonsStyle">
+        <item name="android:background">#005EAC</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:textColor">#FFF</item>
+    </style>
+    <style name="FullscreenTheme" parent="android:Theme.NoTitleBar">
+        <item name="android:windowContentOverlay">@null</item>
         <item name="android:windowBackground">@null</item>
-        <item name="metaButtonBarStyle">?android:attr/buttonBarStyle</item>
-        <item name="metaButtonBarButtonStyle">?android:attr/buttonBarButtonStyle</item>
+        <item name="metaButtonBarStyle">@style/ButtonBar</item>
+        <item name="metaButtonBarButtonStyle">@style/ButtonBarButton</item>
+    </style>
+    <style name="ImageButtonStyle" parent="@android:drawable/edit_text">
+        <item name="android:background">@android:drawable/edit_text</item>
+    </style>
+    <style name="LabelCaptionInActivity">
+        <item name="android:textSize">@dimen/GridTextFontSize</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">#005EAC</item>
+        <item name="android:typeface">monospace</item>
+    </style>
+    <style name="ModiBookLabelCaptionBookIsFreeStyle">
+        <item name="android:textSize">@dimen/GridTextFontSize</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">#005EAC</item>
+        <item name="android:typeface">monospace</item>
+    </style>
+    <style name="ModiBookLabelCaptionBookIsInUseStyle">
+        <item name="android:textSize">@dimen/GridTextFontSize</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">#005EAC</item>
+        <item name="android:typeface">monospace</item>
+    </style>
+    <style name="ModiBookTextViewBookStateStyle">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">#ff000000</item>
+        <item name="android:textSize">25sp</item>
     </style>
     <!-- From: file:/D:/PROJECTS/Android/LibrarianTool/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.0.0/res/values-v11/values.xml -->
     <eat-comment/>
@@ -415,5 +466,39 @@
         <item name="android:background">@android:drawable/edit_text</item>
         <item name="android:maxLength">@integer/EditTextMaxTextLength</item>
         <item name="android:singleLine">true</item>
+        <item name="android:textSize">@dimen/EditTextFontSize</item>
+    </style>
+    <style name="SpinnerStyle" parent="@android:style/Widget.Holo.DropDownItem.Spinner">
+        <!--<item name="android:background">@android:drawable/btn_dropdown</item>-->
+        <item name="android:background">@drawable/spinner_style</item>
+        <item name="android:popupBackground">@android:drawable/dialog_holo_light_frame</item>
+
+    </style>
+    <style name="TextViewAuthorNameStyle">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">#ff000000</item>
+        <item name="android:textSize">@dimen/GridTextFontSize</item>
+    </style>
+    <style name="TextViewBookIsInUseStyle">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">@dimen/GridTextFontSize</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">#ff5d4ee1</item>
+    </style>
+    <style name="TextViewBookNameStyle">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">#005EAC</item>
+        <item name="android:typeface">monospace</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">@dimen/GridTextFontSize</item>
+    </style>
+    <style name="popupMenuStyle" parent="android:Widget.Holo.PopupMenu">
+        <item name="android:popupMenuStyle">@android:color/black</item>
+        <item name="android:popupBackground">@android:color/background_light</item>
+
+        <item name="android:textColor">@android:color/black</item>
     </style>
 </resources>

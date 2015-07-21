@@ -27,13 +27,6 @@
         android:showAsAction="always"
         />
 
-    <!-- Tools menu !-->
-    <item android:id="@+id/action_tools"
-        android:title="@string/action_tools"
-        android:orderInCategory="100"
-        android:visible="false"
-        app:showAsAction="never" />
-
     <item android:id="@+id/action_about"
         android:title="@string/action_about"
         android:orderInCategory="100"

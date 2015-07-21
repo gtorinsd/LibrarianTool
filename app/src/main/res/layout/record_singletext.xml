@@ -16,7 +16,8 @@
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
             android:text="Text"
-            android:padding="@dimen/record_padding">
+            android:textSize="@dimen/EditTextFontSize"
+            >
         </TextView>
     </LinearLayout>
 </LinearLayout>

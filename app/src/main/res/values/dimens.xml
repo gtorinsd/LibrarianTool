@@ -5,8 +5,12 @@
     <dimen name="record_padding">3dp</dimen>
     <dimen name="DialogButtonWidth">100dp</dimen>
     <dimen name="GridTextFontSize">18sp</dimen>
+
+    <dimen name="EditTextFontSize">18sp</dimen>
+
     <dimen name="BookImageSizePreview">70dp</dimen>
     <dimen name="BookImageSize">180dp</dimen>
     <dimen name="ButtonSize">50dp</dimen>
-    <dimen name="EditsMargin">3dp</dimen>
+    <dimen name="ControlsMargin">3dp</dimen>
+    <dimen name="BookClientBottomMargin">15dp</dimen>
 </resources>

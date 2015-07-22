@@ -1,6 +1,7 @@
 package com.udelphi.trainingcenter.librariantool;
 
 import android.app.Activity;
+import android.app.FragmentManager;
 import android.os.Bundle;
 import android.app.Fragment;
 import android.text.Editable;
@@ -10,9 +11,6 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.EditText;
 import android.widget.ImageButton;
-
-import com.udelphi.trainingcenter.librariantool.R;
-
 import com.udelphi.trainingcenter.librariantool.Tools.MessageBox;
 import com.udelphi.trainingcenter.librariantool.Tools.RecordOperationTypeEnum;
 
@@ -242,7 +240,8 @@ public class FragmentCatalogEdit extends Fragment
     {
         // Remove fragment from the activity
         Activity activity = getActivity();
-        if (!activity.isFinishing())
+
+        if ((!activity.isFinishing()) &&(!activity.isDestroyed()))
         {
             activity.getFragmentManager().beginTransaction().remove(this).commit();
         }

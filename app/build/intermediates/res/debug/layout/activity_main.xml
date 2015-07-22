@@ -23,7 +23,9 @@
                 android:id="@+id/BrowseBooksListView"
                 android:background="@drawable/gridrecord"
                 android:choiceMode="singleChoice"
-                android:padding="@dimen/record_padding" />
+                android:padding="@dimen/record_padding"
+                android:fastScrollEnabled="true"
+                android:fastScrollAlwaysVisible="true" />
         </LinearLayout>
 
         <LinearLayout

@@ -153,6 +153,7 @@ public class ModiBookActivity extends Activity implements FragmentCatalogEdit.ca
     private boolean m_SpinnerGenreChangedFirstTime = true;
     private boolean m_SpinnerClientChangedFirstTime = true;
 
+    private int m_SaveMenuItemVisible;
 
     @Override
     protected void onCreate(Bundle savedInstanceState)
@@ -197,6 +198,7 @@ public class ModiBookActivity extends Activity implements FragmentCatalogEdit.ca
         {
             // Just only on launch
             FillControls(m_BooksCursor);
+            m_SaveMenuItemVisible = -1;
         }
 
         FillCatalogsSpinners();
@@ -455,6 +457,7 @@ public class ModiBookActivity extends Activity implements FragmentCatalogEdit.ca
     private void ShowHideBookMenuItemsOnLaunchActivity(Menu menu)
     {
         ShowHideSaveMenuItem(true);
+
         if (m_BookState == BookStateEnum.BookIsFree)
         {
             menu.findItem(R.id.ModiBookCheckoutMenuItem).setVisible(true);
@@ -1367,6 +1370,20 @@ public class ModiBookActivity extends Activity implements FragmentCatalogEdit.ca
     {
         if (m_Menu != null)
         {
+            if (m_SaveMenuItemVisible != -1)
+            {
+                if (m_SaveMenuItemVisible == 0)
+                {
+                    b = false;
+                }
+                if (m_SaveMenuItemVisible == 1)
+                {
+                    b = true;
+                }
+                m_SaveMenuItemVisible = -1;
+            }
+
+
             if (m_EditTextBookName.getText().toString().trim().isEmpty())
             {
                 m_Menu.findItem(R.id.ModiBookBtnOk).setVisible(false);
@@ -1375,6 +1392,8 @@ public class ModiBookActivity extends Activity implements FragmentCatalogEdit.ca
             {
                 m_Menu.findItem(R.id.ModiBookBtnOk).setVisible(b);
             }
+
+
         }
     }
 
@@ -1546,15 +1565,30 @@ public class ModiBookActivity extends Activity implements FragmentCatalogEdit.ca
     {
         outState.putString("ImageFileName", m_ImageFileName);
         outState.putBoolean("MenuIsVisible", m_IsMenuVisible);
+
+
+        if (m_Menu.findItem(R.id.ModiBookBtnOk).isVisible())
+        {
+            m_SaveMenuItemVisible = 1;
+        }
+        else
+        {
+            m_SaveMenuItemVisible = 0;
+        }
+
+        outState.putInt("SaveMenuItemVisible", m_SaveMenuItemVisible);
+
         super.onSaveInstanceState(outState);
     }
 
     @Override
-    public void onRestoreInstanceState(@NonNull Bundle outState)
+    public void onRestoreInstanceState( @NonNull Bundle outState)
     {
         super.onRestoreInstanceState(outState);
         m_ImageFileName = outState.getString("ImageFileName");
         m_IsMenuVisible = outState.getBoolean("MenuIsVisible");
+        m_SaveMenuItemVisible = outState.getInt("SaveMenuItemVisible");
+
         ShowImageFromTheFile(m_ImageFileName);
         ShowBookState();
         if (m_Menu != null)

@@ -13,30 +13,54 @@ import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.AdapterView;
+import android.widget.AlphabetIndexer;
 import android.widget.CursorAdapter;
 import android.widget.ImageView;
 import android.widget.ListView;
 import android.widget.PopupMenu;
+import android.widget.SectionIndexer;
 import android.widget.TextView;
 import com.udelphi.trainingcenter.librariantool.DBTools.DBHelper;
 import com.udelphi.trainingcenter.librariantool.DBTools.DBImagesWorker;
 import com.udelphi.trainingcenter.librariantool.DBTools.DBImportDataTaskLoaderWrapper;
 import com.udelphi.trainingcenter.librariantool.Tools.MessageBox;
 
+import java.util.Arrays;
+
 public class MainActivity extends Activity
 {
     // CursorAdapter for activity
-    private class BooksCursorAdapter extends CursorAdapter
+    private class BooksCursorAdapter extends CursorAdapter implements SectionIndexer
     {
         private ToolApplication m_App;
         private Context m_Context;
         private final String m_LogTag = BooksCursorAdapter.class.getName();
+        private String m_Sections ="";
+
+        AlphabetIndexer mAlphabetIndexer;
 
         public BooksCursorAdapter(ToolApplication app, Cursor c)
         {
             super(app.getApplicationContext(), c, 0);
+
+            // Generate sections string for AlphabetIndexer
+            m_Sections = "";
+            boolean b = c.moveToFirst();
+            while (b)
+            {
+                String s = c.getString(c.getColumnIndexOrThrow("BookName")).substring(0, 1);
+                if (!m_Sections.contains(s))
+                {
+                    m_Sections += s;
+                }
+                b = c.moveToNext();
+            }
+
             m_App = app;
             m_Context = m_App.getApplicationContext();
+            mAlphabetIndexer = new AlphabetIndexer(c, c.getColumnIndexOrThrow("BookName"), m_Sections);
+            //Sets a new cursor as the data set and resets the cache of indices.
+            mAlphabetIndexer.setCursor(c);
         }
 
         @Override
@@ -80,6 +104,26 @@ public class MainActivity extends Activity
                 Log.e(m_LogTag, Ex.getMessage());
             }
         }
+
+        // ========== SectionIndexer implementation ==========
+        @Override
+        public Object[] getSections()
+        {
+            return mAlphabetIndexer.getSections();
+        }
+
+        @Override
+        public int getPositionForSection(int sectionIndex)
+        {
+            return mAlphabetIndexer.getPositionForSection(sectionIndex);
+        }
+
+        @Override
+        public int getSectionForPosition(int position)
+        {
+            return mAlphabetIndexer.getSectionForPosition(position);
+        }
+        // ========== End of SectionIndexer implementation ==========
     }
 
     private View m_View;
@@ -89,6 +133,7 @@ public class MainActivity extends Activity
     private Context m_Context;
     private String m_BaseSQL;
     private String m_SQL;
+    private String m_SQL_order;
     private String m_FilterCaption;
     private int m_FilterMenItemChecked = -1;
     private final int m_RequestRecordIsChanged = 1;
@@ -145,8 +190,16 @@ public class MainActivity extends Activity
                         "LEFT OUTER JOIN %s G ON B.Genre_ID = G._ID " +
                         "LEFT OUTER JOIN %s T ON B._ID = T.Book_ID ";
 
-        m_BaseSQL = String.format(sqlTemplate, m_App.tblBooks, m_App.tblAuthors, m_App.tblGenres, m_App.tblLibraryTurnover);
+        m_SQL_order =   "ORDER BY " +
+                        "B.Name, " +
+                        "A.Name, " +
+                        "G.Name ";
+
+
+
+                        m_BaseSQL = String.format(sqlTemplate, m_App.tblBooks, m_App.tblAuthors, m_App.tblGenres, m_App.tblLibraryTurnover);
         m_SQL = m_BaseSQL;
+        m_SQL = m_SQL + m_SQL_order;
         FillListAdapter(m_SQL);
 
         SetListViewOnItemClick();
@@ -247,7 +300,7 @@ public class MainActivity extends Activity
 
                 m_SQL = m_BaseSQL;
                 if (!strFilter[0].trim().equals("")) {
-                    m_SQL = m_SQL + " WHERE " + strFilter[0];
+                    m_SQL = m_SQL + " WHERE " + strFilter[0] + " " + m_SQL_order;
                 }
 
                 Log.d(m_LogTag, strFilter[0]);
@@ -292,14 +345,6 @@ public class MainActivity extends Activity
             {
                 //region Add new record
                 EditBook(null);
-                break;
-                //endregion
-            }
-
-            case R.id.browsebook_refresh:
-            {
-                //region Refresh books list
-                FillListAdapter(m_SQL);
                 break;
                 //endregion
             }

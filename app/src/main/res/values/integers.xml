@@ -2,5 +2,5 @@
 <resources>
     <integer name="EditTextMaxTextLength">255</integer>
     <integer name="EditTextCommentsMaxTextLength">1024</integer>
-    <integer name="debugFillDatabase">1</integer>
+    <integer name="debugFillDatabase">0</integer>
 </resources>

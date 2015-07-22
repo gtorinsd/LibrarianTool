@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+<item>
+    <layer-list>
+        <item android:drawable="@android:drawable/edit_text" />
+        <item>
+            <bitmap
+                android:src="@drawable/spinner"
+                android:tileMode="disabled"
+                android:gravity="end"
+                />
+        </item>
+
+    </layer-list>
+</item>
+</selector>
